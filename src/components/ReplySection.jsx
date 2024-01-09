@@ -78,13 +78,13 @@ const ReplySection = ({ type, target, parent, parentFunc }) => {
       )}
       <textarea
         placeholder="Add a comment..."
-        className="medium-device:grow w-full medium-device:w-auto outline-none border-light-grayish-blue border-[1px] rounded-[8px] px-[20px] py-[7px] resize-none h-[90px]"
+        className="medium-device:grow w-full medium-device:w-auto outline-none border-light-grayish-blue border-[1px] rounded-[8px] px-[20px] py-[7px] resize-none h-[90px] hover:border-moderate-blue focus:border-moderate-blue transition-all ease-in-out duration-200"
         value={reply}
         onChange={changeHandler}
       ></textarea>
       <button
         onClick={sendHandler}
-        className="text-white bg-moderate-blue px-[20px] py-[7px] rounded-[5px] hover:bg-light-grayish-blue medium-device:block hidden"
+        className="text-white bg-moderate-blue px-[20px] py-[7px] rounded-[5px] hover:bg-light-grayish-blue medium-device:block hidden transition-all ease-in-out duration-200"
       >
         {type}
       </button>
@@ -98,7 +98,7 @@ const ReplySection = ({ type, target, parent, parentFunc }) => {
         )}
         <button
           onClick={sendHandler}
-          className="text-white bg-moderate-blue px-[20px] py-[7px] rounded-[5px] hover:bg-light-grayish-blue medium-device:hidden block"
+          className="text-white bg-moderate-blue px-[20px] py-[7px] rounded-[5px] hover:bg-light-grayish-blue medium-device:hidden block transition-all ease-in-out duration-200"
         >
           {type}
         </button>

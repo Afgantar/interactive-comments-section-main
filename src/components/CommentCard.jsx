@@ -75,14 +75,14 @@ const CommentCard = ({ data, parent }) => {
               <div className="flex items-center gap-[20px] medium-device:hidden">
                 <button
                   onClick={deleteCommentHandler}
-                  className="flex items-center gap-[10px] hover:opacity-50"
+                  className="flex items-center gap-[10px] hover:opacity-50 transition-all ease-in-out duration-200"
                 >
                   <img src={DeleteIcon} alt="" />
                   <p className="font-medium text-soft-red">Delete</p>
                 </button>
                 <button
                   onClick={editCommentHandler}
-                  className="flex items-center gap-[10px] hover:opacity-50"
+                  className="flex items-center gap-[10px] hover:opacity-50 transition-all ease-in-out duration-200"
                 >
                   <img src={EditIcon} alt="" />
                   <p className="font-medium text-moderate-blue">Edit</p>
@@ -92,7 +92,7 @@ const CommentCard = ({ data, parent }) => {
               <>
                 <button
                   onClick={toggleReply}
-                  className="flex items-center gap-[10px] hover:opacity-50 medium-device:hidden"
+                  className="flex items-center gap-[10px] hover:opacity-50 medium-device:hidden transition-all ease-in-out duration-200"
                 >
                   <img src={ReplyIcon} alt="" />
                   <p className="font-medium text-moderate-blue">Reply</p>
@@ -120,14 +120,14 @@ const CommentCard = ({ data, parent }) => {
                 <div className="medium-device:flex items-center gap-[20px] hidden">
                   <button
                     onClick={deleteCommentHandler}
-                    className="flex items-center gap-[10px] hover:opacity-50"
+                    className="flex items-center gap-[10px] hover:opacity-50 transition-all ease-in-out duration-200"
                   >
                     <img src={DeleteIcon} alt="" />
                     <p className="font-medium text-soft-red">Delete</p>
                   </button>
                   <button
                     onClick={editCommentHandler}
-                    className="flex items-center gap-[10px] hover:opacity-50"
+                    className="flex items-center gap-[10px] hover:opacity-50 transition-all ease-in-out duration-200"
                   >
                     <img src={EditIcon} alt="" />
                     <p className="font-medium text-moderate-blue">Edit</p>
@@ -137,7 +137,7 @@ const CommentCard = ({ data, parent }) => {
                 <>
                   <button
                     onClick={toggleReply}
-                    className="medium-device:flex items-center gap-[10px] hover:opacity-50 hidden"
+                    className="medium-device:flex items-center gap-[10px] hover:opacity-50 hidden transition-all ease-in-out duration-200"
                   >
                     <img src={ReplyIcon} alt="" />
                     <p className="font-medium text-moderate-blue">Reply</p>
@@ -149,7 +149,7 @@ const CommentCard = ({ data, parent }) => {
               <div className="w-full flex flex-col gap-[10px]">
                 <textarea
                   placeholder="Edit comment..."
-                  className="outline-none border-light-grayish-blue border-[1px] rounded-[8px] px-[20px] py-[7px] resize-none h-[120px] w-full"
+                  className="outline-none border-light-grayish-blue border-[1px] rounded-[8px] px-[20px] py-[7px] resize-none h-[120px] w-full hover:border-moderate-blue focus:border-moderate-blue transition-all ease-in-out duration-200"
                   value={editedReply}
                   onChange={(e) => {
                     setEditedReply(e.target.value);
@@ -157,7 +157,7 @@ const CommentCard = ({ data, parent }) => {
                 ></textarea>
                 <button
                   onClick={updateHandler}
-                  className="text-white bg-moderate-blue px-[20px] py-[7px] rounded-[5px] hover:bg-light-grayish-blue self-end"
+                  className="text-white bg-moderate-blue px-[20px] py-[7px] rounded-[5px] hover:bg-light-grayish-blue self-end transition-all ease-in-out duration-200"
                 >
                   UPDATE
                 </button>
